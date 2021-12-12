@@ -1,7 +1,52 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    font-size: 16px;
+}
+.container {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+}
+.logo-link {
+    display: inline-block;
+    margin-right: 30px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.nav-menu-item {
+    margin-right: 30px;
+}
+.nav-menu-link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.hero {
+    height: 100vh;
+    position: relative;
+}
+.hero-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 85%;
+}
+.hero-logo {
+    position: absolute;
+    bottom: 300px;
+    width: 55%;
 }
