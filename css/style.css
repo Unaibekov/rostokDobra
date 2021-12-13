@@ -116,7 +116,10 @@ transform: scaleX(1);
         width: 100%;
     }
     .title {
-        font-size: 24px;
+        font-size: 22px;
+    }
+    .sub-title {
+        font-size: 14px;
     }
     p {
         font-size: 14px;
