@@ -55,23 +55,22 @@ body {
 section {
     padding: 10% 0;
 }
-.main {
+.hero {
     background: url('../img/hero-image.svg') no-repeat top right;
     background-size: 50%;
     width: 100%;
+    height: 100vh;
+    position: relative;
 }
 .grayBG {
     background-color: #F2F2F2;
 }
-.hero {
-    height: 100vh;
-    position: relative;
-}
+
 .hero-logo {
     position: absolute;
     bottom: 15%;
     max-width: 728px;
-    width: 100%;
+    width:90%;
     z-index: 2;
 }
 .about-content {
@@ -221,14 +220,14 @@ svg {
     transition: 0.2s ease-in;
     transform: scale(1.2);
 } 
+.menu-button {
+    display: none;
+}
 
-@media (max-width: 900px) {
-    .main {
-        background: url(../img/hero-image.svg) no-repeat top 125% right -55%;
-        background-size: 70%;
-    }
-    .header {
-        display: none;
+@media (max-width: 1024px) {
+    .hero {
+        background: url(../img/hero-image.svg) no-repeat top right;
+        background-size: 80%;
     }
     .about-image {
         width: 30%;
@@ -242,22 +241,44 @@ svg {
     .subtitle {
         font-size: 16px;
     }
-    p {
-        font-size: 14px;
-    }
     .hero-logo {
         bottom: 10%;
-        width: 60%;
+        width: 50%;
+    }
+    .nav {
+        margin-left: auto;
+    }
+    .logo-link, .nav-menu {
+        display: none;
+    }
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        margin-left: auto;
+        border-radius: 5px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        background: url(../img/hero-image.svg) no-repeat top right;
+        background-size: 50%;
     }
 }
 
 
 @media (max-width: 768px) {
-    .main {
-        background: url(../img/hero-image.svg) no-repeat top right -220%;
-        background-size: 95%;
+    .hero {
+        background: url(../img/hero-image.svg) no-repeat top right;
+        background-size: 90%;
     }
-    .header {
+    .nav-menu {
         display: none;
     }
     .about-image {
@@ -274,12 +295,17 @@ svg {
     }
     .hero-logo {
         bottom: 10%;
-        width: 100%;
+    }
+}
+@media (max-width: 736px) {
+    .hero {
+        background: url(../img/hero-image.svg) no-repeat top right;
+        background-size: 50%;
     }
 }
 
 @media (max-width: 480px) {
-    .main {
+    .hero {
         background: url(../img/hero-image.svg) no-repeat top right 130%;
         background-size: 130%;
     }
@@ -287,7 +313,10 @@ svg {
         flex-direction: column;
         align-items: flex-start;
     }
-    .header {
+    .nav {
+        margin-left: auto;
+    }
+    .nav-menu  {
         display: none;
     }
     .about-image {
@@ -301,11 +330,10 @@ svg {
         font-size: 14px;
     }
     .hero-logo {
-        bottom: 20%;
-        width: 100%;
+        bottom: 15%;
+        width: 90%;
     }
     .set-item {
         flex-basis: 100%;
     }
-   
 }
