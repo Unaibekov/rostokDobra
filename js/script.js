@@ -1,8 +1,12 @@
-const faq = document.querySelector('.faq'); 
+const faqs = document.querySelectorAll('.faq'); 
 
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('active');
-    });
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+    })
+
+    
 
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.nav-menu');
