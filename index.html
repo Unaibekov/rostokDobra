@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <div class="hero">
+    <div id='hero' class="hero">
         <div class="container">
             <header class="header">
-                <a href="/" class="logo-link">
+                <a href="#hero" class="logo-link scroll-to">
                     <img width="32" height="40" src="img/logo.svg" alt="Лого" class="logo-image">
                 </a>
                 <nav class="nav">
@@ -27,13 +25,13 @@
                     </button>
                     <ul class="nav-menu">
                         <li class="nav-menu-item">
-                            <a href="#about" class="nav-menu-link hover">О проекте</a>
+                            <a href="#about" class="nav-menu-link scroll-to hover">О проекте</a>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#set" class="nav-menu-link hover">Состав</a>
+                            <a href="#set" class="nav-menu-link scroll-to hover">Мини-теплица</a>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#faq" class="nav-menu-link hover">Инструкция</a>
+                            <a href="#faq" class="nav-menu-link scroll-to hover">Инструкция</a>
                         </li>
                         <li class="nav-contacts">
                             <span><a class="contacts" href="tel:+78002345627">8 800 23456 27</a></span>
@@ -50,7 +48,7 @@
                 <img src="img/box.png" alt="box" class="about-image">
                 <div class="about-text">
                     <div class="title">«Росток добра» —<br>Ваш эко-проект!</div>
-                    <p class="subtitle">Начните растить дерево прямо дома или в офисе. <br>Мини-теплица и всё необходимое уже внутри.</p>
+                    <p class="subtitle">Начните растить дерево прямо дома или в офисе.</p>
                     <p>В пробирке – росток триплоидной осины.</p>
                     <p>Известное Вам дерево – осина, но имеющая дополнительную хромосому в ДНК. Такие деревья специально отыскиваются в лесу, они отличаются стойкостью, «здоровьем» и устойчивостью к болезням и многим паразитам.</p>
                     <p>С найденного дерева отбирают веточку и методом черенкования размножают здоровые и сильные деревья, практически «клонируя» их.</p>
@@ -63,8 +61,8 @@
     <section id='set' class="set grayBG">
         <div class="container">
             <div class="section-heading">
-                <div class="title">Из чего состоит</div>
-                <p class="subtitle">Мини-теплица - отдельно разработанная упаковка из экологически чистых материалов, созданных из вторсырья или подлежащих переработке и соответствующих европейским стандартам производства.</p>
+                <div class="title">Мини-теплица</div>
+                <p class="subtitle">Это отдельно разработанная упаковка из экологически чистых материалов, созданных из вторсырья или подлежащих переработке и соответствующих европейским стандартам производства.</p>
             </div>
             <div class="set-items">
                 <div class="set-item">
@@ -101,7 +99,7 @@
                     <div class="set-item-image">
                         <img src="img/lamp.svg" alt="paper">
                     </div>
-                    <div class="set-item-text"><b>Освещение —</b><br>лампа многоразового использования, единственный элемент для переработки</div>
+                    <div class="set-item-text"><b>Освещение —</b><br>многоразовая лампа, единственный элемент, который сдается на переработку</div>
                 </div>
             </div>
             <div class="energy">
@@ -197,21 +195,21 @@
                     <div>Пересадить росток в почву мини-теплицы.</div>
                     <div class="divider"></div>
                     <div><b>Как это сделать?</b></div> 
-                        <ul>
-                            <li>в нижней части мини-теплицы есть коробочка с таблеткой грунта внутри, которую необходимо напитать влагой с помощью пипетки и горячей воды (дать остыть после увеличения размеров до максимума);</li>
-                            <li>подготовив блюдце, снять плёнку с пробирки, очень аккуратно достать росток из неё, взяв его с помощью пинцета за основание ствола в том месте, где начинают расти корни;</li>
-                            <li>промыть корни водой от остатков питательной среды с помощью пипетки;</li>
-                            <li>с помощью пинцета сделать небольшое (по длине корней) углубление в почве;</li>
-                            <li>с помощью пинцета посадить росток в землю (все корни должны оказаться в грунте, а ближайшие к листьям корни на 1 мм накрыты землёй);</li>
-                            <li>уплотнить грунт вокруг ростка;</li>
-                            <li>поместить «горшочек» обратно в мини-теплицу;</li>
-                            <li>освещать и следить за температурой (2 режим яркости, 8 часов в день, 22-24 градуса) в течение 7-10 дней;</li>
-                        </ul>
-                        <div class="media">
-                            <div class="video">
-                                <iframe src="https://www.youtube.com/embed/gZ7bKRdySy0" title="step 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                    <ul>
+                        <li>в нижней части мини-теплицы есть коробочка с таблеткой грунта внутри, которую необходимо напитать влагой с помощью пипетки и горячей воды (дать остыть после увеличения размеров до максимума);</li>
+                        <li>подготовив блюдце, снять плёнку с пробирки, очень аккуратно достать росток из неё, взяв его с помощью пинцета за основание ствола в том месте, где начинают расти корни;</li>
+                        <li>промыть корни водой от остатков питательной среды с помощью пипетки;</li>
+                        <li>с помощью пинцета сделать небольшое (по длине корней) углубление в почве;</li>
+                        <li>с помощью пинцета посадить росток в землю (все корни должны оказаться в грунте, а ближайшие к листьям корни на 1 мм накрыты землёй);</li>
+                        <li>уплотнить грунт вокруг ростка;</li>
+                        <li>поместить «горшочек» обратно в мини-теплицу;</li>
+                        <li>освещать и следить за температурой (2 режим яркости, 8 часов в день, 22-24 градуса) в течение 7-10 дней;</li>
+                    </ul>
+                    <div class="media">
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/gZ7bKRdySy0" title="step 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                    </div>
                 </div>
             </div>
             <div class="faq">
@@ -238,6 +236,9 @@
                         <li>на 3 день полить росток (2-3 пипетки под корень ростка);</li>
                         <li>с 4 дня адаптации начинаем поливать будущее дерево - по 2-3 пипетки обычной воды под корень ростка;</li>
                     </ul>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/XUE1vmDqsgQ" title="step 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                     <div class="divider"></div>
                     <div><b>Что должно произойти?</b></div> 
                     <div>Росток полностью адаптировался к внешней среде, не изменил цвет и продолжает расти.</div>
@@ -271,6 +272,9 @@
                     <div class="divider"></div>
                     <div><b>Как это сделать?</b></div> 
                     <div>Вместе с грунтом, в котором уже находится росток его нужно пересадить в горшок, где заранее насыпан грунт с подготовленной лункой.</div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Wi2849aT-LY" title="step 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="faq">
