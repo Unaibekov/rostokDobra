@@ -58,3 +58,15 @@ linksClose.forEach(linkClose => {
 //         header.classList.remove('header-fixed')
 //     }
 // }
+
+//on top
+window.onscroll = () => {
+    const header = document.querySelector('.top-second');
+    const Y = window.scrollY; 
+
+    if (Y > 300) {
+        header.classList.add('top-second-open')
+    } else if (Y < 300) {
+        header.classList.remove('top-second-open')
+    }
+}
