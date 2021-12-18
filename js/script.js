@@ -1,3 +1,4 @@
+
 //tabs
 const faqs = document.querySelectorAll('.faq'); 
 
@@ -30,21 +31,21 @@ linksClose.forEach(linkClose => {
     });
 });
 
-//smooth scroll
-const anchors = document.querySelectorAll('a.scroll-to')
+// //smooth scroll
+// const anchors = document.querySelectorAll('a.scroll-to')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
     
-    const blockID = anchor.getAttribute('href')
+//     const blockID = anchor.getAttribute('href')
     
-    document.querySelector(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
+//     document.querySelector(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     })
+//   })
+// }
 
 // //fixed header 
 // window.onscroll = () => {
